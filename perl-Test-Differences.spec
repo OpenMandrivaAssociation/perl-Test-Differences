@@ -16,7 +16,6 @@ Buildrequires:	perl-devel
 %endif
 BuildRequires:	perl-Text-Diff
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 When the code you're testing returns multiple lines, records or data structures

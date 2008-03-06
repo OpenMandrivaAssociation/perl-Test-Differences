@@ -1,7 +1,7 @@
 %define module	Test-Differences
 %define name	perl-%{module}
 %define version 0.47
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name:		%{name}
 Version:	%{version}

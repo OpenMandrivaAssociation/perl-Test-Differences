@@ -1,7 +1,8 @@
 %define module	Test-Differences
 %define name	perl-%{module}
-%define version 0.47
-%define release %mkrel 5
+%define version 0.48.01
+%define up_version  0.4801
+%define release %mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -9,11 +10,8 @@ Release:	%{release}
 Summary:	Test strings and data structures and show differences if not ok 
 License:	GPL or Artistic
 Group:		Development/Perl
-Source:		http://search.cpan.org/CPAN/authors/id/R/RB/RBS/%{module}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{module}
-%if %{mdkversion} < 1010
-Buildrequires:	perl-devel
-%endif
+Source:     http://www.cpan.org/modules/by-module/Test/%{module}-%{up_version}.tar.gz
 BuildRequires:	perl-Text-Diff
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
@@ -24,7 +22,7 @@ and they're just plain wrong, an equivalent to the Unix diff utility may be
 just what's needed.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{module}-%{up_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor

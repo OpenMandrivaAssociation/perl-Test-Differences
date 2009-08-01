@@ -1,20 +1,19 @@
-%define module	Test-Differences
-%define name	perl-%{module}
-%define version 0.48.01
-%define up_version  0.4801
-%define release %mkrel 1
+%define upstream_name	 Test-Differences
+%define upstream_version 0.4801
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Test strings and data structures and show differences if not ok 
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/Test/%{module}-%{up_version}.tar.gz
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl-Text-Diff
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 When the code you're testing returns multiple lines, records or data structures
@@ -22,7 +21,7 @@ and they're just plain wrong, an equivalent to the Unix diff utility may be
 just what's needed.
 
 %prep
-%setup -q -n %{module}-%{up_version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -43,4 +42,3 @@ rm -rf %{buildroot}
 %doc Changes
 %{perl_vendorlib}/Test
 %{_mandir}/*/*
-

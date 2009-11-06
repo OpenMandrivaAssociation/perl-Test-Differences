@@ -1,5 +1,5 @@
 %define upstream_name	 Test-Differences
-%define upstream_version 0.4801
+%define upstream_version 0.500
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}

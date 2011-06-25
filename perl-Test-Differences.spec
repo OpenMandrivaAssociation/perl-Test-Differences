@@ -1,9 +1,9 @@
 %define upstream_name	 Test-Differences
-%define upstream_version 0.500
+%define upstream_version 0.61
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 1
 
 Summary:	Test strings and data structures and show differences if not ok 
 License:	GPL+ or Artistic

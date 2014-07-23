@@ -1,10 +1,10 @@
 %define modname	Test-Differences
-%define modver	0.61
+%define modver 0.62
 
 Summary:	Test strings and data structures and show differences if not ok 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	10
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -35,4 +35,3 @@ make test
 %doc Changes
 %{perl_vendorlib}/Test
 %{_mandir}/man3/*
-

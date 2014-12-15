@@ -1,10 +1,10 @@
 %define modname	Test-Differences
-%define modver 0.62
+%define modver 0.63
 
 Summary:	Test strings and data structures and show differences if not ok 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -23,7 +23,7 @@ just what's needed.
 %setup -qn %{modname}-%{modver}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check

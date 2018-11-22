@@ -4,16 +4,16 @@
 Summary:	Test strings and data structures and show differences if not ok 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	4
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		http://metacpan.org/pod/Test::Differences
 Source0:	http://www.cpan.org/modules/by-module/Test/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test)
 BuildRequires:	perl-Text-Diff
-BuildRequires: perl(Capture::Tiny)
+BuildRequires:	perl(Capture::Tiny)
 BuildRequires:	perl-devel
 
 %description

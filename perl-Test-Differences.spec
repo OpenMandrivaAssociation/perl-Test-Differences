@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/Test::Differences
+Url:		https://metacpan.org/pod/Test::Differences
 Source0:	http://www.cpan.org/modules/by-module/Test/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)

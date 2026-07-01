@@ -2,7 +2,7 @@
 
 Summary:	Test strings and data structures and show differences if not ok 
 Name:		perl-%{modname}
-Version:	0.71
+Version:	0.72
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
